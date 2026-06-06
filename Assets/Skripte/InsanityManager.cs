@@ -9,6 +9,9 @@ public class InsanityManager : MonoBehaviour
     public float maxInsanity = 100f;
     public float currentInsanity = 0f;
     public float insanityRate = 2f; 
+
+    [Header("Insanity Text")]
+    public TMP_Text insanityText;
     
     [Header("UI")]
     public Slider insanityBar;
@@ -55,6 +58,19 @@ public class InsanityManager : MonoBehaviour
             vignetteOverlay.color = new Color(0f, 0f, 0f, alpha);
             gameOverUI.Show();
         }
+        
+        if (insanityText != null)
+        {
+        if (currentInsanity / maxInsanity > 0.75f)
+        {
+            insanityText.color = Color.Lerp(Color.white, Color.red, Mathf.PingPong(Time.time * 3f, 1f));
+        }
+        else
+        {
+            insanityText.color = Color.white;
+        }
+        }
+        
     }
 
     public void ReduceInsanity(float amount)

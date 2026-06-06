@@ -261,7 +261,7 @@ void ShootAtPlayer()
         {
             PlayerHealth ph = hit.collider.GetComponent<PlayerHealth>();
             if (ph != null)
-                ph.TakeDamage(25);
+                ph.TakeDamage(20);
         }
     }
 
