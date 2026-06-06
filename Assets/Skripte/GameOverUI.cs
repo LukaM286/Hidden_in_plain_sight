@@ -15,7 +15,7 @@ public class GameOverUI : MonoBehaviour
     {
         panel.SetActive(true);
 
-        // ⬇️ ODKLENI MIŠKO
+        
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
@@ -26,7 +26,7 @@ public class GameOverUI : MonoBehaviour
     {
         Time.timeScale = 1f;
 
-        // 🔒 spet zakleni miško
+        
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 

@@ -41,7 +41,7 @@ public class InsanityManager : MonoBehaviour
         if (insanityBar != null)
             insanityBar.value = currentInsanity;
 
-        // vignette efekt
+        
         if (vignetteOverlay != null)
         {
             float alpha = currentInsanity / maxInsanity * 1f;

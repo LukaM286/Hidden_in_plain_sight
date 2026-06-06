@@ -43,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        // Smooth HP bar
+        
         if (healthBar != null)
         {
             healthBar.value = Mathf.Lerp(
@@ -53,7 +53,7 @@ public class PlayerHealth : MonoBehaviour
             );
         }
 
-        // Fade damage overlay
+        
         if (damageOverlay != null)
         {
             Color c = damageOverlay.color;
@@ -116,7 +116,7 @@ public class PlayerHealth : MonoBehaviour
             gameOverUI.Show();
         }
 
-        // počakamo frame v realnem času (ni vezano na Time.timeScale)
+        // počakaj frame v realnem času, nima veze z time scale
         yield return new WaitForSecondsRealtime(0.1f);
 
         Time.timeScale = 0f;

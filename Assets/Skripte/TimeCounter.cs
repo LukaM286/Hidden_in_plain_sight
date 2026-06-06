@@ -5,7 +5,7 @@ using System.Collections;
 public class TimeCounter : MonoBehaviour
 {
     public int timePlayed = 0;
-    public TMP_Text timeText; // UI text (HUD)
+    public TMP_Text timeText; 
 
     private Coroutine counterRoutine;
 

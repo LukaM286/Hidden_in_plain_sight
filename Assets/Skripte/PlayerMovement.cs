@@ -10,9 +10,9 @@ public class FPSController : MonoBehaviour
     public float runSpeed = 12f;
     public float jumpPower = 1f;
     public float gravity = 300f;
-    public float crouchHeight = 1f;       // višina med sklanjanjem
-    public float standingHeight = 2f;     // normalna višina
-    public float crouchSpeed = 3f;        // hitrost med sklanjanjem
+    public float crouchHeight = 1f;      
+    public float standingHeight = 2f;     
+    public float crouchSpeed = 3f;        
 
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
@@ -41,7 +41,7 @@ public class FPSController : MonoBehaviour
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
         float speed = isRunning ? runSpeed : walkSpeed;
 
-        if (isCrouching) speed = crouchSpeed; // počasneje med sklanjanjem
+        if (isCrouching) speed = crouchSpeed; 
 
         float curSpeedX = canMove ? speed * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? speed * Input.GetAxis("Horizontal") : 0;
@@ -93,7 +93,7 @@ public class FPSController : MonoBehaviour
     {
         characterController.height = crouchHeight;
         isCrouching = true;
-        // premik kamere ni potreben, CharacterController avtomatsko prilagodi center
+        
     }
 
     void StopCrouch()
