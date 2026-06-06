@@ -3336,7 +3336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4123351b17d7c9429791db7bb80f545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 180
+  timeLimit: 150
   timerText: {fileID: 1703128584}
   gameOverUI: {fileID: 843519392}
   currentTime: 0
@@ -3354,7 +3354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInsanity: 100
   currentInsanity: 0
-  insanityRate: 1.5
+  insanityRate: 1.7
   insanityBar: {fileID: 923754814}
   gameOverUI: {fileID: 843519392}
   vignetteOverlay: {fileID: 460853965}
@@ -31691,7 +31691,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3:00
+  m_text: 2:30
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
