@@ -181,10 +181,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: "YOUR MISSION:\r\nFind and eliminate the doppelganger hiding among civilians.\r\n\r\nCONTROLS:\r\nWASD
     - Move\r\nMouse - Look around\r\nLeft Click - Shoot / Attack\r\nG - Toggle flashlight\r\n1
-    - Gun\r\n2 - Knife\r\nF - Pickup weapon\r\nESC - Pause\r\n\r\nPICKUPS:\r\nHealth
-    pack - Restores health\r\nEnergy drink - Reduces insanity\r\nAmmo - Restores
-    ammunition\r\n\r\nRULES:\r\nDo NOT harm civilians\r\nManage your sanity \u2014
-    collect energy drinks\r\nYou have limited time\r\n\r\nGood luck, Agent."
+    - Gun\r              (when picked-up)\n2 - Knife\r\r               (when picked-up)
+    \nESC - Pause\r\n\r\nPICKUPS:\r\nHealth pack - Restores health\r\nEnergy drink
+    - Reduces insanity\r\nAmmo - Restores ammunition\r\n\r\nRULES:\r\nDo NOT harm
+    civilians\r\nManage your sanity \u2014 collect energy drinks\r\nYou have limited
+    time\r\n\r\nGood luck, Agent."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -193,8 +194,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294949026
+  m_fontColor: {r: 0.6367924, g: 0.721289, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
